@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photography</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+     
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.8/angular-material.min.css">
+
+<script type="text/javascript">
+  
+$(document).ready(function() {
+  $('.nav-item1').click(function(event) {
+    $('body, html').animate({
+      scrollTop: $("#About-content").offset().top
+    }, 1500);
+
+  });
+});
+
+$(document).ready(function() {
+  $('.nav-item2').click(function(event) {
+    $('body, html').animate({
+      scrollTop: $("#gallery-content").offset().top
+    }, 1500);
+
+  });
+});
+$(document).ready(function() {
+  $('.nav-item3').click(function(event) {
+    $('body, html').animate({
+      scrollTop: $("#contact-content").offset().top
+    }, 1500);
+
+  });
+});
+$(document).ready(function() {
+  $('.nav-item4').click(function(event) {
+    $('body, html').animate({
+      scrollTop: $("#service-content").offset().top
+    }, 1500);
+
+  });
+});
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+</script>
+
+
+  <style type="text/css">
+body
+{
+  background-color: black;
+}
+a
+{
+  font-size: 15px;
+  font-family: "times in new roman";
+  
+}
+
+
+#myBtn {
+ position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+.about1
+{
+
+  color: black;
+}
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+
+/* pokemone pictures */
+
+.pokemon {
+  width: 290px;
+  height: 190px;
+  /* center content using flex box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  box-shadow: 0 0 0 100px inset, 0 0 5px grey;
+  /* hover out transition */
+  transition: box-shadow 1s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+/* pokemone names */
+
+.pokemon::after {
+  width: 100%;
+  height: 100%;
+  display: block;
+  white-space: pre;
+display: flex;
+  font: 12pt 'Copperplate Gothic Bold';
+  color: black;
+  border: 2px solid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s .5s;
+}
+
+
+/* reveal pokemone picture on hover */
+
+.pokemon:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+
+/* hide pokemone name on hover */
+
+.pokemon:hover::after {
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+#WEDDING_PHOTOGRAPHY {
+  background-image: url(image/wall.jpg);
+      color:rgb(106, 90, 205);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#WEDDING_PHOTOGRAPHY::after {
+  content: 'WEDDING_PHOTOGRAPHY';
+}
+
+#BIRTHDAY_PHOTOGRAPHY {
+  background-image: url(image/baby_shower2.jpg);
+    color: rgb(106, 90, 205);
+    background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#BIRTHDAY_PHOTOGRAPHY::after {
+  content: 'BABY_SHOWER_PHOTOGRAPHY'
+}
+
+#KIDS_PHOTOGRAPHY {
+  background-image: url(image/leo-rivas-wtxcaDIdOCM-unsplash.jpg);
+  color:rgb(106, 90, 205);
+     background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#KIDS_PHOTOGRAPHY::after {
+  content: 'KIDS_PHOTOGRAPHY'
+}
+
+#PREWEDDING_PHOTOGRAPHY {
+  background-image: url(image/jonathan-borba-3OP1WveSD5Y-unsplash.jpg);
+    color: rgb(106, 90, 205);
+    background-size: 100%;
+  background-repeat: no-repeat;
+}  
+  
+#PREWEDDING_PHOTOGRAPHY::after {
+  content: 'PREWEDDING_PHOTOGRAPHY'
+}
+
+#ENGAGEMENT_PHOTOGRAPHY {
+  background-image: url(image/engagement.jpg);
+    color:rgb(106, 90, 205);
+    background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#ENGAGEMENT_PHOTOGRAPHY::after {
+  content: 'ENGAGEMENT_PHOTOGRAPHY'
+}
+
+
+#WEDDING_ANNIVARSARY {
+  background-image: url(image/annivarsary.jpg);
+    color:rgb(106, 90, 205);
+    background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#WEDDING_ANNIVARSARY::after {
+  content: 'WEDDING_ANNIVARSARY'
+}
+
+.nav-link{
+  background-color: black;
+  border: 2px;
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+
+}
+.nav-link:hover {opacity: 1}
+
+.card-body{
+   background-image: url("image/julius-drost-MwpArULD_2U-unsplash.jpg");
+border-radius: 20px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.zoom {
+  
+  transition: transform .2s;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+  .fa {
+  padding: 10px;
+  font-size: 20px;
+ 
+  text-align: center;
+  text-decoration: none;
+
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+   color: blue;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+
+  
+<div class="container-fluid">
+
+<div class="card"style="height: 600px;padding-top: 0.5%;background-color: black">
+  <div class="card-body">
+<div class="row">
+<div class="col-md-4">
+</div>
+<div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    
+ <ul><li><b style="color: white"></b><a href="https://www.facebook.com/dnyaneshwar.shendkar.7/"><i style="padding-left:50%">
+  <img src="image/facebook.jpg"style="height: 25px;width:25px;margin: 2px">
+                      
+                  </i>
+                </a>
+            
+                <a href="https://www.instagram.com/dnyaneshwar.shendkar/"target="_blank">
+                  <i>
+                    <img src="image/insta.jpg"style="height:25px;margin: 2px">
+                  </i>
+              
+                </a>
+
+    
+                 <a href="https://api.whatsapp.com/send?phone=+91 9762131414"target="_blank">
+                  <i><img src="image/whatsup.jpg"style="height:25px;margin: 2px"></i>
+                 
+                
+                </a>
+
+                  </li>
+                  </ul>
+
+  </div>
+
+    </div>
+</div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-sm bg-light justify-content-center"style="margin-top: 2%;background-color: white">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item1">
+      <a class="nav-link" href="#About-content">About Us</a>
+    </li>
+  
+      <li class="nav-item2">
+      <a class="nav-link" href="#gallery-content">Gallary</a>
+    </li>
+      <li class="nav-item4">
+      <a class="nav-link" href="#service-content">Services</a>
+    </li>
+      <li class="nav-item3">
+      <a class="nav-link" href="#contact-content">Contact Us</a>
+    </li>
+  
+  </ul>
+</nav> 
+
+<div class="row">
+  <div class="col-md-12">
+<center><h2 style="font-family:Copperplate Gothic Bold;color: white;padding-top: 5%"><u>INTRODUCTION TO PHOTOGRAPHY</u></h2></center>
+</div>
+</div>
+
+<div class="row"style="padding-top:60px">
+  <div class="col-md-4">
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="image/michael-henry-5OyGRn_r9Y4-unsplash.jpg" alt="Card image" style="width:100%">
+
+    </div>
+  </div>
+
+
+<div class="col-md-8"style="font-size: 10px;color: white">
+  <h5>The word photograph was coined in 1839 by Sir John Herschel and is based on the Greek φῶς (phos), meaning "light," and γραφή (graphê), meaning "drawing, writing," together meaning "drawing with light."[1]
+    <p>Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p></h5>
+</div> 
+</div>
+
+<div class="row">
+  <div class="col-md-8"style="font-size: 10px;color: white">
+  <h5>This introduction to photography is written for beginners, with several tips and suggestions to take your skills as far as possible. However, writing an introduction to photography is like writing an introduction to words; as amazing and important as it is, photography can be almost limitlessly complex. <p>What separates inspiring photographs from ordinary ones, and how can you improve the quality of your own work? This article lays a foundation to answer to those questions and more.</p></h5>
+</div>
+  <div class="col-md-4">
+  <div class="card" style="width:230px">
+    <img class="card-img-top" src="image/the-nigmatic-YefEvN5CDLY-unsplash.jpg" alt="Card image" style="width:100%">
+
+    </div>
+  </div>
+</div>
+
+<div id="About-content">
+
+<center><h1 class="nav-item1"style="font-family:Copperplate Gothic Bold;color: white"><u>About Me</u></h1></center>
+
+
+<div class="row"style="padding-top:60px">
+  <div class="col-md-4">
+  <div class="card" style="width:100%">
+    <img class="card-img-top" src="image/jakob-owens-DQPP9rVLYGQ-unsplash.jpg" alt="Card image" style="width:100%">
+
+    </div>
+  </div>
+
+
+<div class="col-md-8"style="font-size: 10px;color: white">
+  <h5>
+    <p>I'am Datta Fadatare. I'am Photographer. For me photography is not just a job , it's my passion. I love to take shots of hundred smiles,families,friends which they will not forget those moments which they have spent together. I have started my journey in 2008. </p><p>There is too much hard work in photography, but I always finds smile,love,friendship in that hardwork. Because it not makes me tired , it always makes me happy. Photography always says that, hey man just make your life like a smiley even if you are sad, you will feel alone in your life. It's my duty to make there faces smileful, not for long time but for some time. </p>
+    </h5>
+</div> 
+</div>
+<h4 style="color: white;font-family:Copperplate Gothic Bold;padding-top: 2%">SOME PHOTOGRAPHS DONE BY ME ARE GIVEN BELOW:</h4>
+
+
+
+<div class="row"style="padding-left: 3%;padding-top: 3%">
+
+  <div class="col-md-4">
+  <div id="WEDDING_PHOTOGRAPHY" class="pokemon"onclick="window.location.href='page1.html'"></div><br>
+   
+
+</div>
+
+  <div class="col-md-4">
+ <div id="BIRTHDAY_PHOTOGRAPHY" class="pokemon"onclick="window.location.href='page2.html'"></div><br><br>
+ 
+    
+</div>
+
+  <div class="col-md-4">
+ <div id="ENGAGEMENT_PHOTOGRAPHY" class="pokemon"onclick="window.location.href='page3.html'"></div><br><br>
+ 
+   
+</div>
+
+</div>
+
+
+<div class="row"style="padding-left: 3%">
+
+ <div class="col-md-4">
+  <div id="KIDS_PHOTOGRAPHY" class="pokemon"onclick="window.location.href='page4.html'"></div><br>
+  
+</div>
+
+<div class="col-md-4">
+  <div id="PREWEDDING_PHOTOGRAPHY" class="pokemon"onclick="window.location.href='page5.html'"></div><br><br>
+    
+</div>
+
+<div class="col-md-4">
+  <div id="WEDDING_ANNIVARSARY" class="pokemon"onclick="window.location.href='page6.html'"></div><br><br>
+
+    <!-- <button type="button" class="btn btn-link"onclick="window.location.href='page6.html'">View All</button> -->
+</div>
+</div>
+
+
+<div class="Gallery"style="padding-left: 6%">
+  <div id="gallery-content">
+<div class="row">
+
+  <div class="col-md-12">
+    <center><h1 class="nav-item"style="font-family:Copperplate Gothic Bold;color: white"><b><u>Photo Gallery</u></b></h1></center>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/warren-wong-bh4LQHcOcxE-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/sonika-agarwal-MGVJzCB2cKY-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/rick-gebhardt-DyWBJSQgNT0-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/sonika-agarwal-xq896SUH2Bw-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/peyman-farmani-R-Lfusf_JYo-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/pexels-karolina-grabowska-4497590.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+</div>
+
+
+<div class="row">
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/zane-lee-Mo4VpvopHw0-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/rick-gebhardt-L8mWxbV0b2g-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+  <div class="col-md-4">
+<div class="zoom">
+  <img src="image/luise-and-nic-Hxh4mGqmJpY-unsplash.jpg"style="height: 80%;width: 70%">
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div id="service-content">
+<center><h1 style="font-family:Copperplate Gothic Bold;color: white"><b><u>Service</u></b></h1></center>
+<center><h4>(Click On Image To View More)</h4></center>
+  <div class="row"style="padding-top:60px;padding-left: 10%">
+
+  <div class="col-md-4">
+  <div class="card" style="width:250px;background-color:rgb(106, 90, 205);border-width: 20px">
+    <img class="card-img-top" src="image/mug1.jpg" alt="Card image" style="width:100%;background-color:white;cursor: pointer"onclick="window.location.href='mug.html'"><center><b>PRINTED MUGS</b></center>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+  <div class="card" style="width:250px;background-color:rgb(106, 90, 205);border-width: 20px">
+    <img class="card-img-top" src="image/cushion1.jpg" alt="Card image" style="width:100%;background-color:white;height:190px;cursor: pointer"onclick="window.location.href='cushion.html'"><center><b>PRINTED CUSHIONS</b></center>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+  <div class="card" style="width:250px;background-color:rgb(106, 90, 205);border-width: 20px">
+    <img class="card-img-top" src="image/album1.jpg" alt="Card image" style="width:100%;background-color:white;cursor: pointer"onclick="window.location.href='orders.html'"><center><b>CLIENT ORDERS</b></center>
+    </div>
+  </div>
+
+</div>
+
+<div class="row"style="padding-top:60px;padding-left: 10%">
+
+  <div class="col-md-4">
+  <div class="card" style="width:250px;background-color:rgb(106, 90, 205);border-width: 20px">
+    <img class="card-img-top" src="image/frame1.jpg" alt="Card image" style="width:100%;background-color:white;height: 190px;cursor: pointer"onclick="window.location.href='frame.html'"><center><b>PHOTO FRAMES</b></center>
+    </div>
+  </div>
+
+    <div class="col-md-4">
+  <div class="card" style="width:250px;background-color:rgb(106, 90, 205);border-width: 20px">
+    <img class="card-img-top" src="image/cover5.jpg" alt="Card image" style="width:100%;background-color:white;height: 190px;cursor: pointer"onclick="window.location.href='cover.html'"><center><b>PRINTED MOBILE COVERS</b></center>
+    </div>
+  </div>
+
+  <!--   <div class="col-md-4">
+  <div class="card" style="width:250px">
+    <img class="card-img-top" src="image/album1.jpg" alt="Card image" style="width:100%;background-color:white"onclick="window.location.href='orders.html'"><center>WEDDING ORDERS</center>
+    </div>
+  </div> -->
+
+</div>
+
+</div>
+
+
+
+
+<center><h1 class="nav-item1"style="font-family:Copperplate Gothic Bold;color: white;padding-top: 10%"><b><u>Contact Us</u>
+</b>
+</h1>
+</center>
+<div id="contact-content">
+            <md-card style="padding-top: 10%">
+
+                <div class="row"style="text-align: center;">
+                    
+                    <div class="col-md-3 col-lg-3">
+                        <md-card style="background-color:transparent;">
+                        <div class="single_contact">
+                            <div class="s_contuct_icon">
+                                <i class="fa fa-map-marker"style="color: red"></i>
+                            </div>
+                            <h4 style="color: white">Address</h4>
+                            <p>yevalewadi</p>
+                        </div>
+                    </md-card>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <md-card style="background-color:transparent;"><br>
+                        <div class="single_contact">
+                            <div class="s_contuct_icon">
+                                <i class="fa fa-envelope-o"style="color:yellow"></i>
+                            </div>
+                            <h4 style="color: white">E-mail</h4>
+                            <p>fadatare.com <br/> 
+                            <br>
+                            </p>
+                        </div>
+                    </md-card>
+                        </div>
+                    
+                    <div class="col-md-3 col-lg-3">
+                        <md-card style="background-color:transparent;">
+                        <div class="single_contact">
+                            <div class="s_contuct_icon">
+                                <i class="fa fa-phone"style="color: green"></i>
+                            </div>
+                            <h4 style="color: white">Phone</h4>
+                            <p>+9762131414<br>
+                        </p><br>
+                        </div>
+                    </md-card>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <md-card style="background-color:transparent;">
+                        <div class="single_contact">
+                            <div class="s_contuct_icon">
+                                <i class="fa fa-clock-o"style="color: white"></i>
+                            </div>
+                            <h4 style="color: white">Working Hour</h4>
+                            <p>Monday To Sunday  : 9:00 Am to 9:00 Pm<br/></p>
+                        </div>
+
+                    </md-card>
+                    </div>
+
+                </div>
+                  <center> <ul><li><b style="color: white">Follow Us On->-></b><a href="https://www.facebook.com/dnyaneshwar.shendkar.7/"><i class="fa fa-facebook" style="font-size:24px;color: white">
+                      
+                  </i>
+                </a>
+            
+                <a href="https://www.instagram.com/dnyaneshwar.shendkar/"target="_blank">
+                  <i class="fa fa-instagram" style="font-size:24px;color: white">
+                  </i>
+                 <!--  
+                  <img src="image/insta.jpg"style="height: 30px;width:30px"> -->
+                </a>
+
+             <!--   <a href="https://wa.me/7756999448/?text=I'd like to chat with you"> -->
+
+                 <a href="https://api.whatsapp.com/send?phone=+91 9762131414"target="_blank">
+                  <i class="fa fa-whatsapp"  style="font-size:24px;color: white"></i>
+                 
+                 <!--  <img src="image/whatsup.jpg"style="height: 30px;width:30px"> -->
+                </a>
+
+                 
+              
+                  </li>
+                  </ul>
+                  </center>
+            </md-card>
+
+
+</div>
+
+<div class="myBtn1">
+<center><button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
+<div id="page" style="margin:-8px;background-color:#f5f5f4;">
+  <div id="container"> <div class="header"><table style="width:100%;margin-bottom:5px">
+    <tr>
+        <td>
+            <div style="clear:both;float:left;width:230px;margin-top:15px;margin-left:20px">
+               </div>
+             </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</center>
+</div>
+</div>
+
+
+</body>
+</html>
